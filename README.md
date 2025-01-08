@@ -159,10 +159,20 @@ The below setup and installation guides assume that you are familiar with Cloudf
 
 ## 📦 Installation
 
-Clone [or download this repository](https://github.com/AdvenaHQ/supacache/archive/refs/heads/main.zip):
+Prerequisites for installation:
+- [Node.js](https://nodejs.org/en/download/) (v14 or higher)
+- [pnpm](https://pnpm.io/installation) (v6 or higher)
+
+
+1. Clone [or download this repository](https://github.com/AdvenaHQ/supacache/archive/refs/heads/main.zip):
 ```bash
 git clone https://github.com/AdvenaHQ/supacache.git
 cd supacache
+```
+
+2. Install the dependencies:
+```bash
+pnpm install
 ```
 
 ## ⚙️ Setup
