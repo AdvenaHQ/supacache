@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"unifiedjs.vscode-mdx",
+		"christian-kohler.npm-intellisense"
+	]
+}
