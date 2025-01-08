@@ -1,7 +1,7 @@
 # supacache
 Supacache is a secure, lightweight, high-performance caching middleware for [`supabase-js`](https://github.com/supabase/supabase-js), built on [Cloudflare Workers](https://workers.cloudflare.com/) and [D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/). 
 
-## Key Features
+## 👏 Key Features
 
 - **Encrypted Cache**: All cached data is securely encrypted using AES-GCM for data protection.
 - **Compression**: Combines [JSON](https://www.npmjs.com/package/compress-json) and [GZIP](https://www.npmjs.com/package/pako) compression and binary storage for instant stash and retrieval.
@@ -253,7 +253,7 @@ That's it! You're ready to use your worker. 🥳
 
 ----
 
-## Security
+## 🔒 Security
 This middlware is secure by default when configured correctly. Proxied traffic is secured with TLS, and cached traffic is encrypted at rest and authenticated at retrieval.
 
 There are loads of resources online. Be proactive, don't think you know everything, and assume there's always a vulnerability you're unaware of.
@@ -264,3 +264,17 @@ Never trust, but where you must, trust but verify.
 By nature of it's function, this solution obscures your Supabase API URL. [This must not be relied upon as a security feature](https://en.wikipedia.org/wiki/Security_through_obscurity) - it is not a legitimate remedy for preventing abuse, it is simply a consequential benefit of the Workers platform.
 
 There is no substitution for good security hygiene, guidance-driven hardening, and purpose-built security features like Row Level Security (RLS). There's no shortage of solid, reputable guidance on securing your stack, whether that be [Supabase](https://supabase.com/docs/guides/database/secure-data), [Cloudflare Workers](https://developers.cloudflare.com/workers/reference/security-model/), or any other of the many tools driving your application.
+
+## 🗺️ Planned Features
+- [ ] [JSON Web Tokens](https://jwt.io/) (JWT) for client authentication, instead of `X-Cache-Service-Key` header
+- [ ] Implement End-to-End Encryption (E2EE) and request authentication for enhanced data security
+- [ ] Implement automatic pre-fetching and cache warming for common/popular queries
+- [ ] Implement automated, durable background eviction of stale cache records
+- [ ] Enable usage of single worker for multiple Supabase instances
+- [ ] Implement Stale-While-Revalidate and optimistic returns functionality
+
+## 🧸 Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## ⚖️ License
+This project is licensed under the MIT License. See the LICENSE file for details.
