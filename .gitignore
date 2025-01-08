@@ -232,5 +232,5 @@ dist
 
 # wrangler project
 
-
+.dev.vars
 .wrangler/
