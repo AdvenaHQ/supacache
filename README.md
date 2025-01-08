@@ -231,7 +231,9 @@ The CLI will walk you through creating your worker on Cloudflare.
 - One alphanumeric string, **exactly 32 characters long**, with no spaces or special characters. This will be our `D1_CACHESTORE_ENCRYPTION_KEY` secret, used for encrypting and decrypting cached data in the database.
 - One alphanumeric string of any length between 64 and 256 characters long, with no spaces or special characters. This will be our `SERVICE_AUTH_KEY`, used to authenticate requests from your Supabase client instances.
 
-5. Push these secret values into your worker using the Wrangler CLI by running the following commands separately. You will be prompted for the secret value after hitting "Enter":
+5. Add these values to your `.dev.vars` file in the root of your directory. This will be necessary to correctly generate the environment variable types in the next step.
+
+6. Push these secret values into your worker using the Wrangler CLI by running the following commands separately. You will be prompted for the secret value after hitting "Enter":
 ```bash
 wrangler secret push D1_CACHESTORE_ENCRYPTION_KEY
 ```
@@ -239,12 +241,12 @@ wrangler secret push D1_CACHESTORE_ENCRYPTION_KEY
 wrangler secret push SERVICE_AUTH_KEY
 ```
 
-6. Generate your worker's types by running the following command:
+7. Generate your worker's types by running the following command:
 ```
 wrangler types
 ```
 
-7. Finally, publish your changes to the worker by running the deploy command again:
+8. Finally, publish your changes to the worker by running the deploy command again:
 ```bash
 wrangler deploy
 ```
