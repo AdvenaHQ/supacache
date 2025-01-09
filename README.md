@@ -1,5 +1,6 @@
-# supacache
-Supacache is a secure, lightweight, high-performance caching middleware for [`supabase-js`](https://github.com/supabase/supabase-js), built on [Cloudflare Workers](https://workers.cloudflare.com/) and [D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/). supacache was designed to interface directly with [@advenahq/supabase-js](https://github.com/AdvenaHQ/supabase-js), but will work with any Supabase client.
+![@advenahq/supabase-js](Github-Repo-Header---supacache.png)
+
+Supacache is a secure, lightweight, high-performance caching middleware for [`supabase-js`](https://github.com/supabase/supabase-js), built on [Cloudflare Workers](https://workers.cloudflare.com/) and [D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/). supacache **works best with [our supabase-js wrapper](https://github.com/AdvenaHQ/supabase-js)**, but will work with any Supabase client.
 
 ## 👏 Key Features
 
