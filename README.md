@@ -1,5 +1,5 @@
 # supacache
-Supacache is a secure, lightweight, high-performance caching middleware for [`supabase-js`](https://github.com/supabase/supabase-js), built on [Cloudflare Workers](https://workers.cloudflare.com/) and [D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/). 
+Supacache is a secure, lightweight, high-performance caching middleware for [`supabase-js`](https://github.com/supabase/supabase-js), built on [Cloudflare Workers](https://workers.cloudflare.com/) and [D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/). supacache was designed to interface directly with [@advenahq/supabase-js](https://github.com/AdvenaHQ/supabase-js), but will work with any Supabase client.
 
 ## 👏 Key Features
 
@@ -55,7 +55,7 @@ const { data, error } = await supabase
 ```
 
 ### 🚩 Type-Safe Supabase SSR Wrapper for Next.js apps
-For enhanced type-safety and extensibility in **Next.js** Typescript apps, you can use this initialiser hook that we created. This comes from our private Supabase utility package, which is an extremely powerful, type-safe extender for the Supabase client, which we use in our production apps. We're in the process of open-sourcing the entire package, but for now, here's a modified implementation for this project:
+For enhanced type-safety and extensibility in **Next.js** Typescript apps, you can use this initialiser hook that we created. This comes from the [@advenahq/supabase-js package](https://github.com/AdvenaHQ/supabase-js), which is an extremely powerful, type-safe extension of the supabase-js client, which we use in our production apps. We're in the process of open-sourcing the entire package, but for now, here's a modified implementation for this project:
 
 ```typescript
 import { createServerClient } from "@supabase/ssr";
